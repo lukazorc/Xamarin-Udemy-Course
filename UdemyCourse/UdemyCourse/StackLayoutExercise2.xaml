@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UdemyCourse.StackLayoutExercise2">
+    
+    <StackLayout>
+        <StackLayout VerticalOptions="Center" Padding="10">
+            <Label Text="nyc_photographer" ></Label>
+        </StackLayout>
+        
+        <Image Source="http://lorempixel.com/1920/1080/nature/3/"></Image>
+
+        <StackLayout Orientation="Horizontal" Spacing="20" Padding="10, 0">
+            <Button Text="Like"></Button>
+            <Button Text="Comment"></Button>
+            <Button Text="Share"></Button>
+        </StackLayout>
+
+        <StackLayout>
+            <BoxView Color="#f0f0f0" HeightRequest="1"></BoxView>
+            <Label Text="700 likes" FontAttributes="Bold"></Label>
+            <Label 
+                Text="Note that the image is filling the entirepage horizontally, but we have somepadding around other elements. ToStackLayout that fills the pagehorizontally, and a nested StackLayoutwith some padding. " 
+                TextColor="#444"
+            ></Label>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
